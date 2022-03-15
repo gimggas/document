@@ -12,13 +12,13 @@
 
 
 .mainVisual .itm01 {
-    background:url(../img/main_slider_n01.jpg);
+    background:url(./img//main_slider_n01.jpg);
 }
 .mainVisual .itm02 {
-    background:url(../img/main_slider_n02.jpg);
+    background:url(./img//main_slider_n02.jpg);
 }
 .mainVisual .itm03 {
-    background:url(../img/main_slider_n03.jpg);
+    background:url(./img//main_slider_n03.jpg);
 }
 
 .mainVisual .slick-dots {
