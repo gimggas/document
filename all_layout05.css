@@ -34,9 +34,7 @@
     color:#f00;
 }
 
-.tabMenu .tabContent {
 
-}
 
 .tabMenu .tabContent>div {
     display: none;
@@ -50,7 +48,7 @@
     padding: 200px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/main_slider_n05.jpg) no-repeat fixed center center/cover;
+    background: url(./img//main_slider_n01.jpg) no-repeat fixed center center/cover;
 }
 
 .bgFixed h2 {
