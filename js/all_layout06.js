@@ -115,6 +115,8 @@ $(function(){
          }
      });
 
+     
+
      $('.customerArea .container>div').eq(1).addClass('oo');
      $('.container>div').on('afterChange', function (e,s,c){
          $('.customerArea .container>div').eq(c+1).addClass('oo').siblings().removeClass('oo');
