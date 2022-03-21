@@ -175,12 +175,26 @@
 }
 
 @keyframes heart {
-0% {transform: scale(1);}
-20% {transform: scale(0.5);}
-50% {transform: scale(1);}
-70% {transform: scale(0.5);}
-100% {transform: scale(1);}
-    
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
 }
 
 .mainVisual .visualSlide .msLeft {
@@ -192,10 +206,10 @@
     border-top: 100px solid #fff;
     border-left: 100px solid transparent;
 
-    transform: translateY(-50%) rotate(-135deg) ;
+    transform: translateY(-50%) rotate(-135deg);
 
 }
-   
+
 
 .mainVisual .visualSlide .msLeft.oo {
     border-top: 100px solid #333;
@@ -221,7 +235,8 @@
     padding: 0 15px;
     color: #fff;
 }
-.mainVisual .visualSlide figure.itm02 .inner{
+
+.mainVisual .visualSlide figure.itm02 .inner {
     color: #333;
 }
 
@@ -376,6 +391,7 @@
 .mainProduct .inner img {
     transition: 0.5s;
 }
+
 .mainProduct .inner:hover img {
     transform: scale(1.5);
 }
@@ -385,10 +401,10 @@
     top: -10px;
     right: 0;
 
-    border-top:10px solid #f00;
-    border-left:50px solid #f00;
-    border-bottom:10px solid #f00;
-    border-right:10px solid transparent;
+    border-top: 10px solid #f00;
+    border-left: 50px solid #f00;
+    border-bottom: 10px solid #f00;
+    border-right: 10px solid transparent;
 }
 
 .mainProduct .container figure .label span {
@@ -399,6 +415,7 @@
 
     font-size: 14px;
 }
+
 /* mainProduct : kim 2022.03.17 최종수정 } */
 
 
@@ -411,7 +428,7 @@
 
 .eventBanner {
     padding: 100px 0;
-    background:url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
     text-align: center;
     color: #fff;
     filter: grayscale(1);
@@ -448,9 +465,10 @@
 
 .evenetProduct .container {
     display: flex;
-    width:1200px;
+    width: 1200px;
     margin: 0 auto;
 }
+
 .evenetProduct .container>div {
     padding: 0 15px;
     text-align: center;
@@ -459,6 +477,7 @@
 .evenetProduct .left {
     width: 40%;
 }
+
 .evenetProduct .eProductSlide {
     padding: 5px;
     border: 5px solid #ddd;
@@ -468,7 +487,7 @@
     display: flex;
     align-items: center;
 
-    width:60%;
+    width: 60%;
 }
 
 
@@ -491,7 +510,7 @@
     background: #333;
     color: #fff;
     border-radius: 7px;
-    margin:0 5px;
+    margin: 0 5px;
 }
 
 
@@ -528,7 +547,7 @@
     padding: 0 15px;
 }
 
-.allProduct .aproductSlide figure{
+.allProduct .aproductSlide figure {
     padding: 0 15px;
 }
 
@@ -537,7 +556,7 @@
     margin-bottom: 20px;
 }
 
-.allProduct .inner + strong {
+.allProduct .inner+strong {
     display: block;
     margin-bottom: 20px;
 
@@ -570,7 +589,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
     padding: 10px;
     font-size: 30px;
@@ -586,3 +605,199 @@
     margin-left: 700px;
 }
 
+
+
+
+
+
+
+
+
+
+.movieBg {
+    padding: 200px 0;
+    background: #000;
+    filter: grayscale(1);
+
+
+    color: #fff;
+    text-align: center;
+}
+
+.movieBg h3 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.movieBg p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.movieBg i {
+    font-size: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.customerArea {
+    padding: 100px 0;
+    background: #f2f2f2;
+}
+
+.customerArea .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.customerArea .container>div {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.customerArea .container>div i {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+
+    font-size: 100px;
+    color: #f00;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.customerArea .container>div.oo i {
+    opacity: 1;
+    animation: heart 1s infinite;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+
+.customerArea .container>div .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: yellowgreen;
+    border: 3px solid yellowgreen;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.customerArea .container>div:hover {
+    background: #fff;
+    border: 3px solid yellowgreen;
+    border-radius: 30px;
+    color: yellowgreen;
+
+}
+
+.customerArea .container>div img {
+    filter: grayscale(1);
+    transform: 0.5s;
+}
+
+.customerArea .container>div:hover img {
+    filter: grayscale(0);
+}
+
+.customerArea .tabMenu {
+    display: flex;
+}
+
+.customerArea .tabMenu>li {
+    flex: 1;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.customerArea .tabMenu>li.oo {
+    background: #369;
+
+}
+
+.customerArea .tabMenu>li~li {
+    border-left: 1px solid #fff;
+}
+
+
+.customerArea .tabContent>div {
+    display: none;
+}
+
+.customerArea .tabContent>div.oo {
+    display: block;
+}
+
+.customerArea .tabContent a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3px;
+    border: 1px solid #ddd;
+}
+
+.customerArea .tabContent strong {
+    display: block;
+    width: 400px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.customerArea .tabContent .mainVisual .visualSlide figure {
+    position: relative;
+    height: 600px;
+}

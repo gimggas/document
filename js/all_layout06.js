@@ -68,16 +68,74 @@ $(function(){
     });
     
     
+    // 유튜브 플레이어 ytplayer
+
+    $("#bgndVideo").YTPlayer({
+        videoURL:'dSTahTUVYao',
+        containment:'.movieBg',
+        autoPlay:true,
+        mute:true,
+        startAt:0, 
+        opacity:1,
+        showControls: false,
+        playOnlyIfVisible : true,
+    });
     
+    $('.movieBg i:first-child').on('click', function(){
+        $("#bgndVideo").YTPPause();
+    });
+
+    $('.movieBg i:last-child').on('click', function(){
+        $("#bgndVideo").YTPPlay();
+    });
+
+
+    var a = 1+1;
+    var b = "1" + "1" ;
+    var c = 1 + "1" ;
+
+
+    $('.tabMenu li').on('click', function(){
+        var idx = $(this).index();
+        $(this).addClass('oo').siblings().removeClass('oo');
+        $('.tabContent>div').eq(idx).addClass('oo').siblings().removeClass('oo');
     
-    
-    
-    
-    
-    
-    
-    
-    
+    });
+
+
+
+
+    $('.container>div').eq(1).addClass('oo');
+     $('.container').on('afterChange', function (e,s,c){
+         $('.container>div').eq(c+1).addClass('oo').siblings().removeClass('oo');
+         if (c===1) {
+             $('.msLeft').addClass('oo')
+         } else {
+             $('.msLeft').removeClass('oo')
+         }
+     });
+
+     $('.customerArea .container>div').eq(1).addClass('oo');
+     $('.container>div').on('afterChange', function (e,s,c){
+         $('.customerArea .container>div').eq(c+1).addClass('oo').siblings().removeClass('oo');
+        
+     });
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     //////////////////////////////////
     })
+
