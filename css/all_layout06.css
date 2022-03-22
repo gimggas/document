@@ -3,6 +3,75 @@
 
 
 /* { topBanner : lee 2022.03.17 최종수정 */
+
+
+    .topBannner1 {
+        padding: 2px 0;
+        background: #333;
+    }
+    
+    .topBannner1 .container1 {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 5px;
+    
+    }
+    
+    .topBannner1 .container1 h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 1000;
+        letter-spacing: 0.040em;
+        color:#fff;
+        font-family: "Open Sans",Noto-lang-Regular,NotoKR-Regular,"Malgun Gothic",sans-serif;
+        transform: translateY(25%);
+    }
+    
+    .topBannner1 .container1 p {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: -0.025em;
+    }
+    
+    .topBannner1 .container1 a {
+        position: absolute;
+        top: 0;
+        right: 31%;
+        margin-left: 20px;
+        padding: 3px 20px;
+        border: 1px solid #c7bbb4;
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #c7bbb4;
+        transform: translateY(10%);
+    }
+    
+    .topBannner1 .container1 i {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 24px;
+        cursor: pointer;
+        color:#fff;
+        padding: 0 5px;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 .topBannner {
     padding: 24px 0;
     background: #f3f3f3;
@@ -19,8 +88,10 @@
 .topBannner .container h2 {
     margin-bottom: 10px;
     font-size: 24px;
-    font-weight: 100;
+    font-weight: 500;
     letter-spacing: 0.040em;
+    color:#998465;
+    font-family: "Open Sans",Noto-lang-Regular,NotoKR-Regular,"Malgun Gothic",sans-serif;
 }
 
 .topBannner .container p {
@@ -68,6 +139,7 @@
     line-height: 100px;
 }
 
+
 .headerWrap .container>* {
     padding: 0 15px;
 }
@@ -80,11 +152,14 @@
 
 .gnb>ul {
     display: flex;
+    
 }
 
 .gnb>ul>li {
     position: relative;
     padding: 0 20px;
+    font-size: 14px;
+    
 }
 
 .gnb>ul>li~li::after {
@@ -237,7 +312,7 @@
 }
 
 .mainVisual .visualSlide figure.itm02 .inner {
-    color: #333;
+
 }
 
 .mainVisual .visualSlide figure .inner h3 {
@@ -270,15 +345,15 @@
 
 
 .mainVisual .visualSlide .itm01 {
-    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+    background: url(../images/visual1.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm02 {
-    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+    background: url(../images/visual2.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm03 {
-    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+    background: url(../images/visual3.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .slick-dots {
@@ -338,10 +413,12 @@
 }
 
 .mainProduct h2 {
-    font-size: 19px;
+    font-size: 40px;
     font-weight: 100;
     letter-spacing: 0.20em;
     margin-bottom: 10px;
+    color: #998465;
+    font-family: "Open Sans",Noto-lang-Regular,NotoKR-Regular,"Malgun Gothic",sans-serif;
 }
 
 .mainProduct p {
@@ -349,6 +426,7 @@
     font-weight: 300;
     letter-spacing: -0.025em;
     margin-bottom: 30px;
+    line-height: -30px;
 }
 
 .mainProduct .container {
@@ -370,13 +448,21 @@
 .mainProduct .container figure strong {
     display: block;
     margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Open Sans Bold",Noto-lang-Bold,"Malgun Gothic",sans-serif;
+    color:#998565;
+}
+
+.mainProduct .container figure p {
+    font-size: 14px;
 }
 
 .mainProduct .container figure a {
     display: inline-block;
     padding: 10px 30px;
-    background: #333;
+    background: #998465;
     color: #fff;
+    font-size: 13px;
 }
 
 .mainProduct .container figure a:hover {
@@ -409,8 +495,8 @@
 
 .mainProduct .container figure .label span {
     position: absolute;
-    top: -6px;
-    left: -45px;
+    top: -7px;
+    left: -38px;
     color: #fff;
 
     font-size: 14px;
@@ -428,7 +514,7 @@
 
 .eventBanner {
     padding: 100px 0;
-    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+    background: url(../images/eventBanner1.jpg) no-repeat fixed center center/cover;
     text-align: center;
     color: #fff;
     filter: grayscale(1);
@@ -459,14 +545,18 @@
 
 
 
+
+
 .evenetProduct {
     padding: 100px 0;
+ 
 }
 
 .evenetProduct .container {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+   
 }
 
 .evenetProduct .container>div {
@@ -486,23 +576,28 @@
 .evenetProduct .right {
     display: flex;
     align-items: center;
-
     width: 60%;
+    
 }
 
 
 .evenetProduct h3 {
-    font-size: 19px;
-    font-weight: 100;
+    font-size: 20px;
+    font-weight: 400;
     letter-spacing: 0.20em;
     margin-bottom: 10px;
+    color: #998465;
+    font-family: "Open Sans Bold",Noto-lang-Bold,"Malgun Gothic",sans-serif;
+    
+
 }
 
 .evenetProduct p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     letter-spacing: -0.025em;
     margin-bottom: 30px;
+    line-height: 1.4;
 }
 
 .evenetProduct i {
@@ -519,6 +614,9 @@
 
 
 
+
+
+
 .allProduct {
     position: relative;
     padding: 100px 0;
@@ -528,17 +626,20 @@
 
 
 .allProduct h2 {
-    font-size: 19px;
+    font-size: 27px;
     font-weight: 100;
     letter-spacing: 0.20em;
     margin-bottom: 10px;
+    color: #998465;
+    font-family: "Open Sans",Noto-lang-Regular,NotoKR-Regular,"Malgun Gothic",sans-serif;
 }
 
 .allProduct p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     letter-spacing: -0.025em;
     margin-bottom: 30px;
+    font-family: "Open Sans",Noto-lang-Regular,NotoKR-Regular,"Malgun Gothic",sans-serif;
 }
 
 .allProduct .container {
@@ -625,10 +726,12 @@
 }
 
 .movieBg h3 {
-    font-size: 19px;
-    font-weight: 100;
+    color: #998465;
+    font-size: 20px;
+    font-weight: 1000;
     letter-spacing: 0.20em;
     margin-bottom: 10px;
+    font-family: 'NotoSans-Bold', '맑은 고딕', 'Malgun Gothic', sans-serif;
 }
 
 .movieBg p {
@@ -881,16 +984,41 @@
     transform: translate(-50%, -50%);
     border: 1px solid #ddd;
     padding: 30px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+}
+
+.popup01 .notice-cont {
+    margin: 50px 0;
+    
+}
+
+.popup01 .notice-cont p {
+    color: #333;
+    margin-top: 5%;
+    font-size: 17px;
+  
+
+}
+
+.popup01 .notice-subcopy {
+    font-size: 12px;
 }
 
 .popup01 img {
     width: 400px;
 }
 
-.popup01 button {
+
+.popup01 .notice-button {
+    height: 50px;
+    margin-right: 100px;
+}
+
+.popup01 .notice-button button {
     position: absolute;
-    inset: auto 20px 20px auto;
+    margin-bottom: 15px;
+    bottom: 10px;
     width: 100px;
     height: 30px;
     outline: none;
@@ -901,6 +1029,16 @@
     font-size: 14px;
 }
 
+.popup01 .notice-button i {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    color:#333;
+    padding: 0 5px;
+    
+}
 
 
 

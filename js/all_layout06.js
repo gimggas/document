@@ -2,6 +2,16 @@ $(function(){
     //////////////////////////////////
     
     // topBannner : kim 2022.03.17 수정
+ 
+    function topBannerHandler1() {
+        // $('.topBannner').hide(); //display:none;
+        $('.topBannner1').slideUp();
+    }
+    $('.topBannner1 .container1 i').on('click', topBannerHandler1);
+    // topBannner : kim 2022.03.17 수정
+    
+
+
     function topBannerHandler() {
         // $('.topBannner').hide(); //display:none;
         $('.topBannner').slideUp();
@@ -80,7 +90,7 @@ $(function(){
     // 유튜브 플레이어 ytplayer
 
     $("#bgndVideo").YTPlayer({
-        videoURL:'dSTahTUVYao',
+        videoURL:'9lEaF0zYNS8',
         containment:'.movieBg',
         autoPlay:true,
         mute:true,
@@ -144,8 +154,17 @@ $(function(){
 
    
     $('.popup01 button').on('click', function(){
-        $(this).parent().hide();
+        $(this).parent().hide();{
+        }
+        
     });
+
+    function topBannerHandler2() {
+        // $('.topBannner').hide(); //display:none;
+        $('.popup01').hide();
+    }
+    $('.popup01 .notice-button i').on('click', topBannerHandler2);
+    // topBannner : kim 2022.03.17 수정
 
 
 
