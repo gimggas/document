@@ -9,6 +9,15 @@ $(function(){
     $('.topBannner .container i').on('click', topBannerHandler);
     // topBannner : kim 2022.03.17 수정
     
+
+
+
+
+
+
+
+
+    
     // visualSlide : kim 2022.03.17 수정
     $('.visualSlide').slick({
         arrows: true,
@@ -123,7 +132,20 @@ $(function(){
         
      });
 
+
+
+     // link
+     
+    $('#link').on('change', function() {
+        let linkSite = $(this).val();
+        if (!linkSite) return;
+        window.open(linkSite)
+    });
+
    
+    $('.popup01 button').on('click', function(){
+        $(this).parent().hide();
+    });
 
 
 
