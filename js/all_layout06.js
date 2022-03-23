@@ -167,6 +167,23 @@ $(function(){
     // topBannner : kim 2022.03.17 수정
 
 
+    $('.toTop').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop:0
+        }, 10000);
+        return false;
+    })
+
+    $(window).on('scroll', function() {
+        let sct = $(window).scrollTop();
+        console.log(sct);
+        if(sct > 500) {
+            $('.toTop').fadeIn(1000);
+        } else {
+            $('.toTop').fadeOut(1000);
+        }
+    })
 
 
 
