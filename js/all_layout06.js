@@ -53,6 +53,17 @@ $(function(){
          }
      });
 
+
+
+
+
+
+
+
+     //
+
+
+
     $('.eProductSlide').slick({
         arrows: false,
         autoplay: true, 
@@ -71,6 +82,11 @@ $(function(){
     
     //
     
+
+
+
+
+
     $('.aproductSlide').slick({
         arrows: false,
         dots: true,
@@ -87,6 +103,13 @@ $(function(){
     });
     
     
+
+
+
+
+
+
+
     // 유튜브 플레이어 ytplayer
 
     $("#bgndVideo").YTPlayer({
@@ -109,6 +132,19 @@ $(function(){
     });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    //
     var a = 1+1;
     var b = "1" + "1" ;
     var c = 1 + "1" ;
@@ -120,10 +156,15 @@ $(function(){
         $('.tabContent>div').eq(idx).addClass('oo').siblings().removeClass('oo');
     
     });
+    //
 
 
 
 
+
+
+
+    //
     $('.container>div').eq(1).addClass('oo');
      $('.container').on('afterChange', function (e,s,c){
          $('.container>div').eq(c+1).addClass('oo').siblings().removeClass('oo');
@@ -141,9 +182,14 @@ $(function(){
          $('.customerArea .container>div').eq(c+1).addClass('oo').siblings().removeClass('oo');
         
      });
+     //
 
 
-
+    
+    
+    
+    
+    
      // link
      
     $('#link').on('change', function() {
@@ -152,12 +198,25 @@ $(function(){
         window.open(linkSite)
     });
 
-   
+        //
+
+
+
+
+
+
+
+
+   //
     $('.popup01 button').on('click', function(){
-        $(this).parent().hide();{
+        $(this).parent().parent().hide();{
         }
         
     });
+    //
+
+
+
 
     function topBannerHandler2() {
         // $('.topBannner').hide(); //display:none;
@@ -167,6 +226,11 @@ $(function(){
     // topBannner : kim 2022.03.17 수정
 
 
+
+
+    
+
+
     $('.toTop').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
@@ -174,6 +238,9 @@ $(function(){
         }, 10000);
         return false;
     })
+
+
+
 
     $(window).on('scroll', function() {
         let sct = $(window).scrollTop();
