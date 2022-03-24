@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
     <style>
         .Wrap {}
 
-        header, footer {
-            height:200px;
-            background: #555;
-            color:#fff;
+        header,
+        footer {
+            height: 100px;
+            background: #343a40;
+            color: #fff;
             text-align: center;
             line-height: 100px;
         }
@@ -40,25 +42,26 @@
             background: #333;
             margin: 15px auto;
         }
-        
+
         .subPage .infoMation>p {
             text-align: center;
             font-size: 15px;
             font-weight: 300;
             margin-bottom: 40px;
         }
+
         .subPage .infoMation .container {
             display: flex;
             flex-wrap: wrap;
             width: 1200px;
             margin: 0 auto;
+
         }
 
         .subPage .infoMation .container figure {
             width: 100%;
             margin-bottom: 40px;
             padding: 0 15px;
-            bor
         }
 
         .subPage .infoMation .container .left {
@@ -90,9 +93,9 @@
         }
 
         .subPage .infoMation .container .right strong {
-           display: block;
-           font-weight: 700;
-           margin-bottom: 40px;
+            display: block;
+            font-weight: 700;
+            margin-bottom: 40px;
         }
 
         .root_daum_roughmap {
@@ -107,66 +110,78 @@
 </head>
 
 <body>
-<div class="Wrap">
-    <header>
-        header
-    </header>
+    <div class="Wrap">
+        <header>
+            header
+        </header>
 
 
 
 
-    <article class="subPage">
-        <section class="infoMation">
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <div class="container">
-            <figure>
-                <!-- * 카카오맵 - 지도퍼가기 -->
-<!-- 1. 지도 노드 -->
-<div id="daumRoughmapContainer1648006547625" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <article class="subPage">
+            <section class="infoMation">
+                <h2>Lorem ipsum dolor sit.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nesciunt praesentium optio nemo
+                    repudiandae!</p>
+                <div class="container">
+                    <figure>
+                        <!-- * 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div id="daumRoughmapContainer1648006579080"
+                            class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-<!--
+                        <!--
 	2. 설치 스크립트
 	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
 -->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                        <script charset="UTF-8" class="daum_roughmap_loader_script"
+                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1648006547625",
-		"key" : "29jyk",
-		// "mapWidth" : "640",
-		"mapHeight" : "360"
-	}).render();
-</script>
-            </figure>
-            <div class="left">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            </div>
-            <div class="right">
-                <p>
-                    <strong>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-                        Ipsa, nesciunt. Aut maxime ad eaque magni rem?
-                    </strong>
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp": "1648006579080",
+                                "key": "29jys",
+                                //"mapWidth": "640",
+                                "mapHeight": "360"
+                            }).render();
+                        </script>
+                    </figure>
+                    <div class="left">
+                        <h3>Lorem ipsum dolor sit amet consectetur<br>
+                            adipisicing elit.</h3>
+                    </div>
+                    <div class="right">
+                        <p>
+                            <strong>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                Beatae accusantium at inventore ducimus, sapiente aspernatur! Architecto.
+                            </strong>
 
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                     Veritatis, sint vitae fugit accusamus repudiandae impedit, <br><br>
-                      facere blanditiis necessitatibus vero nulla culpa debitis sequi unde id.<br><br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                            Quia cupiditate reprehenderit provident est mollitia ut molestias laboriosam illo similique,
+                            <br><br>
+                            temporibus sequi aliquam quisquam, repudiandae, deserunt quaerat porro ipsam! Incidunt,
+                            ex.<br><br><br>
 
-                      <strong>Lorem, ipsum dolor.</strong>
-                </p>
+                            <strong>Lorem, ipsum dolor.</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </article>
 
-            </div>
-        </div>
-        </section>  
-    </article>
 
 
-    <footer>
-        &copy; lee.
-    </footer>
-</div>
+
+
+
+
+
+        <footer>
+            &copy; lee.
+        </footer>
+    </div>
 </body>
+
 </html>

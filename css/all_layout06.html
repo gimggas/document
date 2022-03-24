@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL 레이아웃 06</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/all_layout06.css">
+</head>
+
+
+<body>
+ 
+    <div class="Wrap1">
+        <div class="topBannner1">
+            <div class="container1">
+                <h2>COVID-19 고객보호 정책 안내</h2>
+                <p>
+                    <a href="#!">자세히보기</a>
+                </p>
+                <i class="xi-close"></i>
+            </div>
+        </div>
+
+
+
+
+
+
+    <div class="Wrap">
+        <div class="topBannner">
+            <div class="container">
+                <h2>[롯데호텔 서울] [Flash Sale] LOTTE Spring Promotion</h2>
+                <p>
+                    객실 + [일~목] 30시간 Stay : 150,000원~
+                    <a href="#!">자세히보기</a>
+                </p>
+                <i class="xi-close"></i>
+            </div>
+        </div>
+        <!--  topBanner : kim 2022.03.17 최종수정 } -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- { header : kim 2022.03.17 최종수정 -->
+        <header class="headerWrap">
+            <div class="container">
+                <h1>
+                    <a href="/">
+                        <img src="./images/gnb_logo_hotelsresorts.png" alt="grafflogo">
+                    </a>
+                </h1>
+
+
+
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">객실예약</a></li>
+                        <li><a href="#!">스페셜 오퍼</a></li>
+                        <li><a href="#!">웨딩&컨벤션</a></li>
+                        <li><a href="#!">e-SHOP</a></li>
+                        <li><a href="#!">드라이브 스루</a></li>
+                    </ul>
+                </nav>
+
+                <div class="searchForm">
+                    <form name="searchForm" id="searchForm" action="javascript:formSumit()">
+                        <input type="search" name="searchvalue" id="searchvalue" placeholder="검색어를 입력해주세요." required>
+                        <button><i class="xi-search"></i></button>
+                    </form>
+                    <script>
+                        const formSumit = () => {
+                            const searchVal = document.searchForm.searchvalue.value;
+                            if (searchVal.length < 5) {
+                                alert('검색어가 너무 짧습니다.');
+                                return
+                            }
+                            alert(searchVal)
+                        }
+                    </script>
+                </div>
+            </div>
+        </header>
+        <!-- header : kim 2022.03.17 최종수정 }-->
+
+
+
+
+
+
+
+        <main>
+            <!-- { mainVisual : kim 2022.03.17 최종수정 -->
+            <section class="mainVisual">
+                <div class="visualSlide">
+                    <figure class="itm01">
+                        <div class="inner">
+                            <h3>LOTTE HOTEL REWARDS</h3>
+                            <p>전 세계 체인 호텔의 리워즈 상품과 혜택으로 라이프스타일에 다채로움을 더하세요.</p>
+                        </div>
+                        <i class="xi-heart"></i>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="inner">
+                            <h3>COMMITMENT TO HYGIENE</h3>
+                            <p>전 세계 롯데호텔에서 제공하는 강력한 위생 관리 프로그램과 비대면 서비스로 걱정으로부터 자유로울 수 있는 공간과 경험을 제공합니다. </p>
+                        </div>
+                        <i class="xi-heart"></i>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="inner">
+                            <h3>LOTTE ARAI RESORT</h3>
+                            <p>롯데아라이리조트, 니가타에서 만나는 진정한 휴식</p>
+                        </div>
+                        <i class="xi-heart"></i>
+                    </figure>
+                </div>
+            </section>
+             <!-- mainVisual : kim 2022.03.17 최종수정  } -->
+
+
+
+
+
+            <!-- { mainProduct : kim 2022.03.17 최종수정 -->
+            <section class="mainProduct">
+                <h2>Room Packages & Offers</h2>
+                <p></p>
+                <div class="container">
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/mainproduct1.jpg" alt="">
+                        </div>
+                        <strong>SPRING HOLIDAY</strong>
+                        <p>롯데호텔에서 제공하는<br>다양한 혜택을 확인해보세요.</p>
+                        <a href="">GO TO OFFERS</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/mainproduct2.jpg" alt="">
+                        </div>
+                        <strong>BED & BREAKFAST </strong>
+                        <p>고객님의 여유로운 호텔스테이를 위해<br>조식포함 상품을 준비하였습니다.</p>
+                        <a href="">GO TO OFFERS</a>
+                    </figure>
+                    <figure>
+                        <div class="inner">
+                            <img src="./images/mainproduct3.jpg" alt="">
+                        </div>
+                        <strong>LOTTE HOTEL REWARDS</strong>
+                        <p>전 세계 롯데호텔앤리조트의 객실을<br>리워즈 회원 전용 가격으로 만나보세요.</p>
+                        <a href="">GO TO OFFERS</a>
+                        <div class="label">
+                            <span>HIT !</span>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <!-- mainProduct : kim 2022.03.17 최종수정 } -->
+
+
+
+
+
+            <!-- { eventBanner : kim 2022.03.17 최종수정 -->
+            <section class="eventBanner">
+                <h2>LOTTE HOTELS & RESORTS Brands</h2>
+                <p>Modern convenience and design for balanced travel</p>
+                <a href="#!">more <i class="xi-arrow-right"></i></a>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="evenetProduct">
+                <div class="container">
+                    <div class="left">
+                        <div class="eProductSlide">
+                            <figure><img src="./images/1.jpg" alt=""></figure>
+                            <figure><img src="./images/2.jpg" alt=""></figure>
+                            <figure><img src="./images/3.jpg" alt=""></figure>
+                            <figure><img src="./images/4.jpg" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="txtinner">
+                            <h3>LOTTE HOTEL</h3>
+                            <p>감각적인 라이프 스타일을 추구하는 고객은 모던하고 세련된 스타일로 리노베이션 된 객실에 만족할 것이며,  <br>야구도시 부산을 배경으로 마련한 추신수 스타 룸은 외국인 전용 카지노와 함께 특별한 즐거움이 될 것입니다. </p>
+                            <i class="xi-pause"></i> <i class="xi-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- eventBanner : kim 2022.03.17 최종수정 } -->
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- { allProduct : kim 2022.03.17 최종수정 -->
+            <section class="allProduct">
+                <h2>Exploring Destinations</h2>
+                <p>LOTTE HOTELS & RESORTS MAGAZINE </p>
+                <div class="container">
+                    <div class="aproductSlide">
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/jeju.jpg" alt="">
+                            </div>
+                            <strong>JEJU</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/seoul1.jpg" alt="">
+                            </div>
+                            <strong>SEOUL</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/ulsan.jpg.jpg" alt="">
+                            </div>
+                            <strong>ULSAN</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/hanoi.jpg" alt="">
+                            </div>
+                            <strong>HANOI</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/seoul2.jpg" alt="">
+                            </div>
+                            <strong>SEOUL</strong>
+                        </figure>
+                        <figure>
+                            <div class="inner">
+                                <img src="./images/seoul3.jpg" alt="">
+                            </div>
+                            <strong>SEOUL</strong>
+                        </figure>
+                    </div>
+                    <div class="arrows">
+                        <i class="xi-arrow-left"></i>
+                        <i class="xi-arrow-right"></i>
+                    </div>
+                </div>
+            </section>
+                <!-- allProduct : kim 2022.03.17 최종수정  }-->
+            
+
+
+
+
+
+
+
+
+
+                <!-- ytplayer -->
+            <section class="movieBg">
+                <h3>롯데월드의 계절을 담다</h3>
+                <p>포토그래퍼의 시선으로 담아본 롯데월드의 아름다운 모습을 영상으로 만나보세요! </p>
+                <div class="btn">
+                    <i class="xi-pause"></i> 
+                    <i class="xi-play"></i>          
+                </div>
+
+
+
+
+
+
+                <div id="bgndVideo" class="player"></div>    
+            </section>
+               <!-- ytplayer -->
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <section class="customerArea">
+                <div class="container">
+                    <div>
+                        <ul class="tabMenu">
+                            <li class="oo">News &amp; notice</li>
+                            <li><a href="#!">Event</a></li>
+                            <li><a href="#!">Issue &amp; doc</a></li>
+                        </ul>
+                        <div class="tabContent">
+                            <div class="oo">
+                                <ul>
+                                    <li><a href="#!">
+                                        <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Lorem ipsum dolor
+                                        </strong>
+
+                                        <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#!">
+                                        <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Lorem ipsum dolor
+                                        </strong>
+
+                                        <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#!">
+                                        <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Lorem ipsum dolor
+                                        </strong>
+
+                                        <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#!">
+                                        <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Lorem ipsum dolor
+                                        </strong>
+
+                                        <span>2022.03.21</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div><ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul></div>
+                            <div><ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a href="#!">
+                                    <strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Lorem ipsum dolor
+                                    </strong>
+
+                                    <span>2022.03.21</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div>
+                <img src="./images/위치.png" alt="">
+                <a href="#" class="btn">
+                    VIEW
+                </a>
+                <i class="xi-heart"></i>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+
+
+<footer class="footerWrap">
+    <div class="top">
+        <div class="container">
+            <dl class="left">
+                <dt><a href="#!">이용약관</a></dt>
+                <dd><a href="#!">문의하기</a></dd>
+                <dd><a href="#!">개인정보 취급방침</a></dd>
+                <dd><a href="#!">방문 예약하기</a></dd>
+                <dd><a href="#!">사이즈 가이드</a></dd>
+                <dd><a href="#!">그라프 하우스 소개</a></dd>
+            </dl>
+            <div class="sns">
+                <a href="#!" target="_blank"><i class="xi-kakaotalk"></i></a>
+                <a href="#!" target="_blank"><i class="xi-instagram"></i></a>
+                <a href="#!" target="_blank"><i class="xi-facebook"></i></a>
+                <a href="#!" target="_blank"><i class="xi-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="container">
+            <address>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, doloremque.
+            </address>
+            <div class="link">
+                <select id="link">
+                    <option value="">FAMILY LINK</option>
+                    <option value="http://naver.com">naver</option>
+                    <option value="http://daum.net">daum</option>
+                    <option value="http://google.com">google</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+
+
+    <div class="popup01">
+        <div class="notice-img">
+            <img src="./images/covid.jpg" alt="">    
+            </div>
+            <div class="notice-cont">
+            <p>COVID-19 관련 안내</p>    
+            </div>
+            <div class="notice-subcopy">
+            <p> 사회적 거리두기 조치에 다른<br>
+                운영 기준 안내</p>
+        </div>
+            
+
+
+        <div class="notice-button">
+            <button>
+                자세히보기
+            </button>
+            <i class="xi-close"></i>
+        </div>
+    </div>
+
+
+
+    <button class="toTop">
+        <i class="xi-arrow-top"></i>
+    </button>
+
+
+
+
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/jquery.mb.YTPlayer.min.js"></script>
+<script src="./js/all_layout06.js"></script>
+
+</html>
